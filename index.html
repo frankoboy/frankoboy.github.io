@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quebec Students Stats (QSS)</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Quebec Students Stats (QSS)">
+  <meta name="author" content="Francois Belanger">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Quebec Students Stats (QSS)</h1>
+    <h2>A Comparative Regional Students Population Engine</h2>
+    <p>Francois Belanger<br/>Student, Johns Hopkins/Coursera</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This suite of applications was created in the context of the &quot;Developing Data Products&quot; course offered by Johns Hopkins University on Coursera. The goal of this exercise is to get familiar with the following tools:</p>
+
+<ul>
+<li>Shiny: an interactive web framework for R</li>
+<li>Slidify: a presentation tool in R</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The QSS application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Using the Shiny package as well as regular R code, the Quebec Students Stats (QSS) application aims to access basic data and summaries for regional many-level students population in the province of Quebec, Canada.</p>
+
+<p>You can try the QSS application and read its complete documentation by click <a href="https://frankoboy.shinyapps.io/quebecstudents/">here</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Data &amp; Results</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>We used Quebec&#39;s Superior Education Department data on projected enrollment for the next semester/year of school in most postsecondary institutions in Quebec. There is a row in the dataset for each Quebec administrative region as well as for totals for the numbers in the other columns, which represent the number of preuniversitary, technical, baccalaureate, master and doctorate students. There is also a row with the sum of those five numbers.</p>
+
+<p>The Results section include the region selected and a table, where each row is a type of students (and the last row for totals) and each results column contains:</p>
+
+<ul>
+<li>the number of students of that type in that region, </li>
+<li>the proportion of this type of students in the overall student population of the region, and </li>
+<li>the proportion of this number of students in the overall student population of that type in all of Quebec.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>By selecting Montreal and the three last (university) levels, here are the results QSS would give you.</p>
+
+<pre><code>## [1] &quot;Montreal&quot;
+</code></pre>
+
+<pre><code>##      Level           Population Region % Quebec Level %
+## [1,] &quot;Baccalaureate&quot; &quot;117293&quot;   &quot;59.9&quot;   &quot;65.3&quot;        
+## [2,] &quot;Master&quot;        &quot;18152&quot;    &quot;9.3&quot;    &quot;62&quot;          
+## [3,] &quot;Doctorate&quot;     &quot;6719&quot;     &quot;3.4&quot;    &quot;66.4&quot;        
+## [4,] &quot;Total&quot;         &quot;142164&quot;   &quot;72.6&quot;   &quot;64.9&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The QSS application'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Data &amp; Results'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Example'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
